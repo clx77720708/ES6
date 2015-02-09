@@ -161,7 +161,7 @@ let fib = {
         return {
             next() {
                 [pre, cur] = [cur, pre + cur];
-                return { done: false, value: cur }
+                return { done: false, value: cur };
             }
         };
     }
