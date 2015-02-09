@@ -131,7 +131,7 @@ var template = `<div>
 <div id="${secondId}" class="${className}">
     ${secondId}!
 </div>
-</div>`
+</div>`;
 
 console.log(template);
 ```
@@ -161,12 +161,11 @@ let fib = {
         return {
             next() {
                 [pre, cur] = [cur, pre + cur];
-                    return { done: false, value: cur }
-                }
+                return { done: false, value: cur }
             }
-        }
+        };
     }
-}
+};
 
 for (var n of fib) {
     if (n > 100) console.log(n);
@@ -316,3 +315,5 @@ function factorial(n=0) {
 
 factorial(100000);  // 在 ES5 中将会出现栈溢出
 ```
+
+*本作品采用知识共享署名-非商业性使用-禁止演绎 2.5 中国大陆许可协议进行许可。*
